@@ -3,7 +3,7 @@
 Project layout contains only 3 necessary files:
 - pom.xml (with minimal deps)
 - frontend/index.ts (React entrypoint)
-- src/main/java/org/samuliwritescode/Application.java (Server backend)
+- src/main/java/org/samuliwritescode/Server.java (Server backend)
 
 Everything else will be either generated or are not strictly required. Dockerfile is provided for convenience.
 
