@@ -13,4 +13,5 @@ What application does, it executes endpoint call to server which returns string 
 ## To run it
 `mvn spring-boot:run`
 or
-`docker build -t hilla-minimal .` and then `docker run hilla-minimal:latest -p 8080:8080`
+`docker build -t hilla-minimal .` and then 
+`docker run -p 8080:8080 hilla-minimal:latest`
