@@ -11,10 +11,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @Endpoint
 @AnonymousAllowed
 @NpmPackage(value = "@types/react-dom", version = "^18.2.0")
-public class Application {
+public class Server {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(Server.class, args);
     }
 
     @Nonnull
