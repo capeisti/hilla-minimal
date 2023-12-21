@@ -10,12 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @Endpoint
 @AnonymousAllowed
-@NpmPackage.Container({
-        @NpmPackage(value = "react", version = "^18.2.0"),
-        @NpmPackage(value = "react-dom", version = "^18.2.0"),
-        @NpmPackage(value = "@types/react", version = "^18.2.0"),
-        @NpmPackage(value = "@types/react-dom", version = "^18.2.0")
-})
+@NpmPackage(value = "@types/react-dom", version = "^18.2.0")
 public class Application {
 
     public static void main(String[] args) {
