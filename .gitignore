@@ -1,0 +1,13 @@
+/.idea/
+/node_modules/
+/vite.generated.ts
+/vite.config.ts
+/frontend/generated
+/target/
+/src/main/bundles/
+
+#Let these be generated always. Not recommended for the long run though
+/package.json
+/package-lock.json
+/tsconfig.json
+/types.d.ts

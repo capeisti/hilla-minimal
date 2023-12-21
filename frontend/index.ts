@@ -6,4 +6,4 @@ function drawServerResponse(result: string): void {
     createRoot(document.body).render(createElement("div", {}, result));
 }
 
-Application.getSomething().then(drawServerResponse);
+Application.getHello().then(drawServerResponse);

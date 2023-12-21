@@ -1,5 +1,6 @@
 package org.samuliwritescode;
 
+import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import dev.hilla.Endpoint;
 import dev.hilla.Nonnull;
@@ -9,6 +10,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @Endpoint
 @AnonymousAllowed
+@NpmPackage.Container({
+        @NpmPackage(value = "react", version = "^18.2.0"),
+        @NpmPackage(value = "react-dom", version = "^18.2.0"),
+        @NpmPackage(value = "@types/react", version = "^18.2.0"),
+        @NpmPackage(value = "@types/react-dom", version = "^18.2.0")
+})
 public class Application {
 
     public static void main(String[] args) {
@@ -16,7 +23,7 @@ public class Application {
     }
 
     @Nonnull
-    public String getSomething() {
-        return "Something";
+    public String getHello() {
+        return "Hello world";
     }
 }
