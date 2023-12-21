@@ -5,6 +5,7 @@
 /frontend/generated
 /target/
 /src/main/bundles/
+/frontend/index.html
 
 #Let these be generated always. Not recommended for the long run though
 /package.json

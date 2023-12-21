@@ -1,9 +1,8 @@
 # A minimal Hilla application with Spring Boot and React
 
-Project layout contains only 4 necessary files:
+Project layout contains only 3 necessary files:
 - pom.xml (with minimal deps)
 - frontend/index.ts (React entrypoint)
-- frontend/index.html (needed for React to show something)
 - src/main/java/org/samuliwritescode/Application.java (Server backend)
 
 Everything else will be either generated or are not strictly required. Dockerfile is provided for convenience.
