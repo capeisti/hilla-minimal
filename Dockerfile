@@ -9,4 +9,5 @@ WORKDIR /app
 RUN jar xvf *.war
 WORKDIR /app/WEB-INF/
 EXPOSE 8080
+ENV VAADIN.PRODUCTIONMODE=true
 ENTRYPOINT java -classpath "lib/*:classes/." org.samuliwritescode.Application
